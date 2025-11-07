@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Venkat Civil Engineers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+Telugu:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Venkat Civil Engineers Logo">
+                <span class="logo-text">VENKAT CIVIL ENGINEERS</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html" class="cta-button primary-cta nav-cta">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1 class="page-title">Contact Our Team</h1>
+            <p class="page-subtitle">We are ready to discuss your land surveying and engineering needs.</p>
+        </div>
+    </div>
+
+    <section class="contact-layout-section">
+        <div class="container contact-layout-grid">
+            
+            <div class="contact-form-container">
+                <div class="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    
+                    <form id="contactForm" onsubmit="sendWhatsApp(event)" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="Phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Full Location / Village Name</label>
+                            <input type="text" id="location" name="Location" required placeholder="Ex: Hayathnagar or Gachibowli">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="land_type">Type of Land to Survey</label>
+                            <select id="land_type" name="Land Type" required>
+                                <option value="" disabled selected>-- Select Land Type --</option>
+                                <option value="Residential Plot">Residential Plot (House / Layout)</option>
+                                <option value="Agriculture Land">Agriculture Land (Farming)</option>
+                                <option>Commercial / Industrial Property</option>
+                                <option>Road / Infrastructure Project</option>
+                                <option>Other (Specify in Message)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Inquiry Details</label>
+                            <textarea id="message" name="Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn primary-cta">
+                           <i class="fab fa-whatsapp"></i> Submit & Send Inquiry via WhatsApp
+                        </button>
+
+                        <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #555;">
+                            
+                        </p>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-info-section">
+                <h3>Our Contact Details</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Near veerannagutta, Hayathnagar Khalsa, Telangana</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 7671086372</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>venkatlandsur101@gmail.com</p>
+                </div>
+                <iframe 
+                    class="map-embed" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15234.332306263541!2d78.58333290000001!3d17.306060199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcda325048d0b2f%3A0x6a0c0e1e2d8b5b5c!2sHayathnagar%20Khalsa%2C%20Telangana%20501505!5e0!3m2!1sen!2sin!4v1704778942296!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="cta-strip">
+        <div class="container cta-strip-content">
+            <p class="cta-text white-text">Ready to start your project?</p>
+            <a href="contact.html" class="primary-cta primary-cta-inverse">Contact Us Today</a>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h4>VENKAT CIVIL ENGINEERS</h4>
+                <p>Leading experts in land surveying, GIS mapping, and construction layout technology, committed to precision and timely delivery.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Reach Out</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Hayathnagar Khalsa, TS</p>
+                <p><i class="fas fa-phone"></i> +91 7671086372</p>
+                <p><i class="fas fa-envelope"></i> venkatlandsur101@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Venkat Civil Engineers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function sendWhatsApp(event) {
+            // Stops the page from reloading
+            event.preventDefault(); 
+
+            // 1. Get user input values (NEW fields added here)
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const location = document.getElementById('location').value; // New Field
+            const land_type = document.getElementById('land_type').value; // New Field
+            const message = document.getElementById('message').value;
+
+            // 2. Format the message for WhatsApp (UPDATED to include new fields)
+            const whatsappMessage = 
+                "*NEW PROJECT INQUIRY* (Via Website Form) \n\n" + 
+                "----------------------------------------------\n" + 
+                "*Client Details:*" + "\n" +
+                "Name: " + name + "\n" + 
+                "Phone: " + phone + "\n" + 
+                "Email: " + email + "\n" +
+                "----------------------------------------------\n" + 
+                "*Project Scope:*" + "\n" +
+                "Location: " + location + "\n" + 
+                "Land Type: " + land_type + "\n\n" + 
+                "*User Message:*" + "\n" + message;
+
+            // 3. Construct the WhatsApp URL for your number (7671086372)
+            const whatsappURL = "https://wa.me/917671086372?text=" + encodeURIComponent(whatsappMessage);
+
+            // 4. Open the generated WhatsApp link in a new window/tab
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+
+</body>
+</html>
